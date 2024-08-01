@@ -8,8 +8,8 @@
         <a href="#teachers">Teachers</a>
         <a href="#contact">Contact</a>
       </nav>
-  
+  <div>
       <a href="tel:977775577" class="border p-2 rounded-2xl bg-sky-900">+998 (98) 777-77-77</a>
-  
+  </div>
     </header>
   </template>
