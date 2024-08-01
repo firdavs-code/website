@@ -3,22 +3,7 @@
         <AppHeader></AppHeader>
         <main class="scroll-smooth ">
             <MainSection></MainSection>
-            <section class="h-screen text-center py-20" id="about">
-                <div class="text-stone-500 text-3xl pb-10">
-                    <h1>Al-Xorazmiynig yonalishlari</h1>
-                </div>
-                <div class="flex justify-between">
-                    <p class="text-stone-500 w-1/2 py-2 px-10 text-xl italic">
-                        Bizning academiyada hozida ingiliz tili, SAT, <br>Matematika,hamda boshqa koplab xususiy
-                        maktablardan prizident,Al-Xorazmiy kabi maktablarg hamda,<br>xususiy universitetlarga kirishga
-                        yordam
-                        beradi.<br>Academiyamizda oz kasbning ,utahasislari dars berib boradi
-                    </p>
-                    <img class="size-2/5 rounded-xl" src="./assets/photos/c.jpg">
-
-                </div>
-
-            </section>
+            <AboutSection></AboutSection>
 
             <section class="h-screen py-20 px-32 flex justify-between bg-[#142242] " id="teachers">
                 <img class=" rounded-2xl" src="./assets/photos/b.jpg">
@@ -50,4 +35,5 @@
 <script setup>
 import AppHeader from './components/AppHeader.vue';
 import MainSection from './components/sections/MainSection.vue';
+import AboutSection from './components/sections/AboutSection.vue';
 </script>
