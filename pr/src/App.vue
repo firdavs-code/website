@@ -5,7 +5,7 @@
             <MainSection></MainSection>
             <AboutSection></AboutSection>
             <FounderSection></FounderSection>
-            <section class="h-screen text-center py-20" id="contact">Contact</section>
+            <ContactSection></ContactSection>
         </main>
     </div>
 </template>
@@ -15,4 +15,5 @@ import AppHeader from './components/AppHeader.vue';
 import MainSection from './components/sections/MainSection.vue';
 import AboutSection from './components/sections/AboutSection.vue';
 import FounderSection from './components/sections/FounderSection.vue';
+import ContactSection from './components/sections/ContactSection.vue';
 </script>
