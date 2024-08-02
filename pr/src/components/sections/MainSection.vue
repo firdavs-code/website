@@ -10,12 +10,7 @@
                 maktablardan prizident, Al-Xorazmiy kabi maktablarg hamda, xususiy universitetlarga kirishga
                 yordam beradi. Akademiyamizda oz kasbning mutahasislari dars berib boradi!
             </p>
-
             </div>
         </div>
     </section>
 </template>
-
-<!-- bg-cover
-         bg-[url('@/assets/photos/a.jpg')] bg-no-repeat -->
-
