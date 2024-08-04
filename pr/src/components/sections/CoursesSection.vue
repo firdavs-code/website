@@ -1,12 +1,12 @@
 <template>
     <div class="h-screen text-center py-20 justify-center flex flex-col" id="courses">
         <h1 class="text-4xl font-medium"> Bizning Kurslar</h1>
-        <div class="card text-white">
+        <div class="card     text-white">
             <h3 class="text-2xl font-medium">Bizning akademiyada kurslar 3 oydan boshlab 2 yilgacha</h3>
             <Carousel :value="courses" :numVisible="4" :numScroll="1" :responsiveOptions="responsiveOptions"
                 :autoplayInterval="3000">
                 <template #item="slotProps">
-                    <Card style="width: 25rem; overflow: hidden; border-radius: 20px">
+                    <Card style="width: 24rem; overflow: hidden; border-radius: 20px; margin-left: auto; margin-right: auto">
                         <template #header>
                             <img alt="user header" src="https://primefaces.org/cdn/primevue/images/usercard.png" />
                         </template>
@@ -38,12 +38,12 @@ import { courses } from '@/data/courses';
 
 const responsiveOptions = ref([
     {
-        breakpoint: '1400px',
+        breakpoint: '1550px',
         numVisible: 3,
         numScroll: 1
     },
     {
-        breakpoint: '1199px',
+        breakpoint: '1200px',
         numVisible: 2,
         numScroll: 1
     },
@@ -53,7 +53,7 @@ const responsiveOptions = ref([
         numScroll: 1
     },
     {
-        breakpoint: '575px',
+        breakpoint: '855px',
         numVisible: 1,
         numScroll: 1
     }
