@@ -1,22 +1,22 @@
 <template>
     <div class="h-screen text-center py-20" id="courses">
         <div class="card">
-            <Carousel :value="products" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" circular
+            <Carousel :value="products" :numVisible="4" :numScroll="1" :responsiveOptions="responsiveOptions"
                 :autoplayInterval="3000">
                 <template #item="slotProps">
-                    <Card style="width: 25rem; overflow: hidden">
+                    <Card style="width: 25rem; overflow: hidden; border-radius: 20px">
                         <template #header>
                             <img alt="user header" src="https://primefaces.org/cdn/primevue/images/usercard.png" />
                         </template>
                         <template #title>{{ slotProps.data.name }}</template>
-                        <template #subtitle>{{ slotProps.data.teacher + ' - ' + slotProps.data.students + 'bitirgan'}}</template>
+                        <template #subtitle>{{ slotProps.data.teacher + ' - ' + slotProps.data.students + ' bitiruvchi'}}</template>
                         <template #content>
-                            <p class="m-0">
+                            <p class="m-0 leading-relaxed text-justify max-h-12">
                                 {{ slotProps.data.description }}
                             </p>
                         </template>
                         <template #footer>
-                            <div class="flex gap-4 mt-1">
+                            <div class="flex gap-4 mt-0">
                                 <Button :label="'Oyiga atiga ' + slotProps.data.price + ' ming so\'m'" class="w-full" />
                             </div>
                         </template>
@@ -102,7 +102,7 @@ const products = ref([
 const responsiveOptions = ref([
     {
         breakpoint: '1400px',
-        numVisible: 2,
+        numVisible: 3,
         numScroll: 1
     },
     {
