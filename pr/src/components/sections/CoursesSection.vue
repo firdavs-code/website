@@ -34,7 +34,7 @@ import { ref } from "vue";
 import Carousel from 'primevue/carousel';
 import Card from 'primevue/card';
 import Button from 'primevue/button';
-import { courses } from '../../data/courses';
+import { courses } from '@/data/courses';
 
 const responsiveOptions = ref([
     {
