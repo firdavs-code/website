@@ -1,8 +1,8 @@
 <template>
-    <section class=" px-12 gap-16 h-screen flex text-center py-[90px] bg-[#142242]" id="contact">
+    <section class=" px-12 gap-16 justify-center h-screen flex text-center pt-32 bg-[#142242]" id="contact">
 
 
-        <div class="card flex flex-col w-1/2 items-center gap-24 ">
+        <div class="card flex flex-col w-1/3 items-center gap-24 ">
             <div class="text-lg">
                 <h1 class="text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit!</h1>
             </div>
@@ -31,16 +31,13 @@
                         <p class="m-0">
                             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                             voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                           
+
                         </p>
                     </AccordionContent>
                 </AccordionPanel>
             </Accordion>
         </div>
-
-        <div class=" rounded-xl w-1/3">
-            <img src="@/assets/photos/c.jpg" alt="">
-        </div>
+        <div class="w-1/3 h-4/5 " id="map"></div>
 
 
     </section>
@@ -55,4 +52,18 @@ import AccordionPanel from 'primevue/accordionpanel';
 import AccordionHeader from 'primevue/accordionheader';
 import AccordionContent from 'primevue/accordioncontent';
 
+
+import { ref, onMounted } from 'vue';
+import "leaflet/dist/leaflet.css";
+import * as L from 'leaflet';
+
+const initialMap = ref(null);
+
+onMounted(() => {
+    initialMap.value = L.map('map').setView([41.263767043474765, 69.16254061842835], 20);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(initialMap.value);
+});
 </script>
