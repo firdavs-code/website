@@ -14,7 +14,7 @@
                 maqsadlarimizga erishgan bo'lamiz. "
             </h2>
             <h3 class="text-3xl gap-10 font-bold text-gray-300  ">Al-Xorazmiy academiyasi asoschisi</h3>
-            <h4 class="text-xl py-4 gap-10 font-mono text-orange-500">Alisher Uzakov</h4>
+            <h4 class="text-xl py-4 gap-10 font-mono text-orange-500">Olam Olamov</h4>
         </div>
 
     </section>

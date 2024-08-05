@@ -1,8 +1,8 @@
 <template>
-    <div class="h-screen text-center py-20 justify-center flex flex-col" id="courses">
-        <h1 class="text-4xl font-medium"> Bizning Kurslar</h1>
-        <div class="card     text-white">
-            <h3 class="text-2xl font-medium">Bizning akademiyada kurslar 3 oydan boshlab 2 yilgacha</h3>
+    <div class="h-screen text-center py-20 justify-between flex flex-col" id="courses">
+        <h1 class="text-5xl font-medium">Bizning Kurslar</h1>
+        <div class="card text-white">
+            <!-- <h3 class="text-2xl font-medium">Bizning akademiyada kurslar 3 oydan boshlab 2 yilgacha. </h3> -->
             <Carousel :value="courses" :numVisible="4" :numScroll="1" :responsiveOptions="responsiveOptions"
                 :autoplayInterval="3000">
                 <template #item="slotProps">
